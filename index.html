@@ -59,22 +59,22 @@
         </h3>
 
         <ul class="faq">
-            <li class="q">Q: _What is the current status of the project?</li>
+            <li class="q">Q: What is the current status of the project?</li>
             <li class="a">A: It is work-in-progress. Stable builds will be regularly published.</li>
         </ul>
 
         <ul class="faq">
-            <li class="q">Q: _Will you keep developing the project?</li>
+            <li class="q">Q: Will you keep developing the project?</li>
             <li class="a">
                 A: Hopefully, yes. Anyway, you know what happens to the most of open-source projects: there's
-                always risk ofbeing abandoned.
+                always risk of being abandoned.
             </li>
         </ul>
         <ul class="faq">
-            <li class="q">Q: _How to run it?</li>
+            <li class="q">Q: How to run it?</li>
             <li class="a">
                 A: Download featured tomcat-vdbc bundle, unzip it and run startup.sh or startup.bat depending
-                on whatoperating system you use. Also make sure you have set your environment properly:
+                on what operating system you use. Also make sure you have set your environment properly:
                 <ul>
                     <li>variable <code>JAVA_HOME</code> must point to a JDK root directory if you have JDK installed
                     </li>
@@ -85,32 +85,32 @@
             </li>
         </ul>
         <ul class="faq">
-            <li class="q">Q: _What database management systems are supported?</li>
+            <li class="q">Q: What database management systems are supported?</li>
             <li class="a">
                 A: A DBMS is supported if it provides JDBC-compliant driver. H2 driver is already packaged.
-                Add your driver jars to $TOMCAT_DIR/lib (in case of using featured tomcat package) or wherever your
+                Add your driver jars to <code>$TOMCAT_DIR/lib</code> (in case of using featured tomcat package) or wherever your
                 container expect these jars to be.
             </li>
         </ul>
         <ul class="faq">
-            <li class="q">Q: _Where are the connection profiles stored?</li>
+            <li class="q">Q: Where are the connection profiles stored?</li>
             <li class="a">
                 A: Connection profiles stored in the vdbc-settings.xml file in your home directory
-                (~/.config/vdbc/vdbc-settings.xml). You are encouraged to edit connection profiles using bult-in
+                (<code>~/.config/vdbc/vdbc-settings.xml</code>). You are encouraged to edit connection profiles using built-in
                 settings manager.
             </li>
         </ul>
         <ul class="faq">
-            <li class="q">Q: _How to disable settings editor?</li>
+            <li class="q">Q: How to disable settings editor?</li>
             <li class="a">
                 A: To disable settings editor you should provide a value for system property named
-                "vdbc.settings.editor-enabled". E.g., for Tomcat you can add the following text somewhere in the
-                beginning of $TOMCAT_DIR/bin/catalina.sh:
+                <code>"vdbc.settings.editor-enabled"</code>. E.g., for Tomcat you can add
+                the following text somewhere in the beginning of <code>$TOMCAT_DIR/bin/catalina.sh</code>:
                 <pre><code>CATALINA_OPTS=-Dvdbc.settings.editor-enabled=false</code></pre>
             </li>
         </ul>
         <ul class="faq">
-            <li class="q">Q: _Have anybody ever asked you these questions?</li>
+            <li class="q">Q: Have anybody ever asked you these questions?</li>
             <li class="a">A: Actually, no, but it's nice to have a FAQ section.</li>
         </ul>
     </section>
