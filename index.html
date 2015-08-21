@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>vdbc by bitlama</title>
+    <title>vdbc</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -66,7 +66,7 @@
         <ul class="faq">
             <li class="q">Q: Will you keep developing the project?</li>
             <li class="a">
-                A: Hopefully, yes. Anyway, you know what happens to the most of open-source projects: there's
+                A: Hopefully, yes. Anyway, you know what happens to the most of such projects: there's
                 always risk of being abandoned.
             </li>
         </ul>
@@ -79,9 +79,9 @@
                     <li>variable <code>JAVA_HOME</code> must point to a JDK root directory if you have JDK installed
                     </li>
                     <li>variable <code>JRE_HOME</code> must point to a JRE root directory if you have JRE installed
-                        Then open http://localhost:8080/vdbc/ in your browser.
                     </li>
                 </ul>
+                Then open http://localhost:8080/vdbc/ in your browser.
             </li>
         </ul>
         <ul class="faq">
@@ -95,28 +95,45 @@
         <ul class="faq">
             <li class="q">Q: Where are the connection profiles stored?</li>
             <li class="a">
-                A: Connection profiles stored in the vdbc-settings.xml file in your home directory
-                (<code>~/.config/vdbc/vdbc-settings.xml</code>). You are encouraged to edit connection profiles using built-in
-                settings manager.
+                A: Connection profiles are stored in the vdbc-settings.xml file in your home directory
+                (<code>$HOME/.config/vdbc/vdbc-settings.xml</code>). You are encouraged to use built-in
+                settings manager to edit connection profiles.
             </li>
         </ul>
         <ul class="faq">
             <li class="q">Q: How to disable settings editor?</li>
             <li class="a">
-                A: To disable settings editor you should provide a value for system property named
-                <code>"vdbc.settings.editor-enabled"</code>. E.g., for Tomcat you can add
-                the following text somewhere in the beginning of <code>$TOMCAT_DIR/bin/catalina.sh</code>:
-                <pre><code>CATALINA_OPTS=-Dvdbc.settings.editor-enabled=false</code></pre>
+                A: To disable settings editor you should provide a value for
+                <code>"vdbc.settings.editor-enabled"</code> system property. 
+                E.g. for Tomcat you can create <code>$TOMCAT_DIR/bin/setenv.sh</code> 
+                file with the following content:
+                <pre><code>CATALINA_OPTS="-Dvdbc.settings.editor-enabled=false"</code></pre>
             </li>
         </ul>
         <ul class="faq">
             <li class="q">Q: Have anybody ever asked you these questions?</li>
-            <li class="a">A: Actually, no, but it's nice to have a FAQ section.</li>
+            <li class="a">A: No. But it's nice to have a FAQ section.</li>
         </ul>
+        
+        <h3>Screenshots</h3>
+        <div>
+            <div>
+                <a href="images/screens/login.png"><img src="images/screens/thumbs/login.png" alt="login"></a>
+                <a href="images/screens/profiles.png"><img src="images/screens/thumbs/profiles.png" alt="profiles"></a>
+            </div>
+            <div>
+                <a href="images/screens/query.png"><img src="images/screens/thumbs/query.png" alt="query"></a>
+                <a href="images/screens/metadata.png"><img src="images/screens/thumbs/metadata.png" alt="metadata"></a>
+            </div>
+            <div>
+                <a href="images/screens/table-structure.png"><img src="images/screens/thumbs/table-structure.png" alt="table-structure"></a>
+                <a href="images/screens/table-data.png"><img src="images/screens/thumbs/table-data.png" alt="table-data"></a>
+            </div>
+        </div>
     </section>
     <footer>
         <p>
-            <small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small>
+            <small>Hosted on <a href="https://pages.github.com">GitHub Pages</a></small>
         </p>
     </footer>
 </div>
